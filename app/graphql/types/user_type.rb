@@ -11,5 +11,6 @@ module Types
     field :postcode, String, null: true
     field :country, String, null: true
     field :full_address, String, null: true
+    field :posts, [Types::PostType], null: true
   end
 end
