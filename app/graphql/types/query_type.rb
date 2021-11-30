@@ -18,8 +18,16 @@ module Types
       description: "Shows one user" do
         argument :id, ID, required: true
       end
-      def user(id:)
-        User.find_by_id(id)
+    def user(id:)
+      User.find_by_id(id)
+    end
+
+    field :post, Types::PostType, null: false,
+      description: "show one post" do
+        argument :id, ID, required: true
       end
+    def post(id:)
+      Post.find_by_id(id)
+    end
   end
 end
