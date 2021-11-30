@@ -29,5 +29,13 @@ module Types
     def post(id:)
       Post.find_by_id(id)
     end
+
+    field :comment, Types::CommentType, null: false,
+      description: "Show one comment" do
+        argument :id, ID, required: true
+      end
+      def comment(id:)
+        Comment.find_by_id(id)
+      end
   end
 end
