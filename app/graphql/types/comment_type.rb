@@ -1,5 +1,5 @@
 module Types
-  class CommentType < GraphQL::Schema::Object
+  class CommentType < Types::BaseObject
     description "One comment"
 
     field :id, ID, null: false

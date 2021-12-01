@@ -1,5 +1,5 @@
 module Types
-  class PostType < GraphQL::Schema::Object
+  class PostType < Types::BaseObject
     description "One Post"
 
     field :id, ID, null: false
