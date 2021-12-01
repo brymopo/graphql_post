@@ -11,7 +11,7 @@ module Types
         argument :city, String, required: false
         argument :postcode, String, required: false
         argument :country, String, required: false
-        argument :posts, ID, "User's post's attributes", required: false
+        argument :posts_attributes, [NestedAttributes], "User's post's attributes", required: false
       end
   end
 end
