@@ -5,5 +5,6 @@ module Types
     field :delete_user, mutation: Mutations::UserMutations::DeleteUser
 
     field :create_post, mutation: Mutations::PostMutations::CreatePost
+    field :update_post, mutation: Mutations::PostMutations::UpdatePost
   end
 end
